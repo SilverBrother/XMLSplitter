@@ -81,7 +81,7 @@ def split_options(input_filepath, output_dir, option):
     # Apply the tag that "Head" and "Data" is an element off
     trees = {range_key: create_tree_func("Main") for range_key in zip_ranges.keys()}
 
-    # Iterate over each Delivery element
+    # Iterate over each Register element
     for register in root.findall('.//Register'):
         # Find the Zip element
         zip_element = register.find('.//Adr/Zip')
